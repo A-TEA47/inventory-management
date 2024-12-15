@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/inventory_management?allowPublicKeyRetrieval=true&useSSL=false
+    username: root
+    password: Quebec470 # Correct typo if necessary
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+logging:
+  level:
+    org.hibernate.SQL: DEBUG # Enables SQL query logging
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE # Logs parameter bindings
+
+server:
+  port: 8080 # Configures the server to run on port 8080
+
